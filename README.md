@@ -25,6 +25,11 @@ For more information, see [Firebase](https://firebase.google.com/docs/unity/setu
 2. Xcode 9.0 or higher (when developing for iOS).
 3. Android SDK (when developing for Android).
 
+## In developing
+
+1. Creating channels
+2. Chat
+
 ## License
 
 This project is licensed under the MIT - see the [LICENSE.md](https://github.com/dworkinnn/unity_telegram_3d/blob/master/LICENSE) file for details.
