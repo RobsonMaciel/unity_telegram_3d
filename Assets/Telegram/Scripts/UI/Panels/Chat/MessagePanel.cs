@@ -7,8 +7,9 @@ namespace Telegram.Chat
 {
     public class MessagePanel : MonoBehaviour
     {
-        [Header("Components")]
-        [SerializeField] private Image _navBackground;
+        [Header("Components")] [SerializeField]
+        private Image _navBackground;
+
         [SerializeField] private Text _txtNavHeader;
         [SerializeField] private Button _btnBack;
         [SerializeField] private VerticalLayoutGroup _txtLayoutGroup;
@@ -20,15 +21,9 @@ namespace Telegram.Chat
 
         private void Start()
         {
-            _btnBack.onClick.AddListener(() =>
-            {
-                OnClickBack?.Invoke();
-            });
+            _btnBack.onClick.AddListener(() => { OnClickBack?.Invoke(); });
 
-            _inputFieldText.onEndEdit.AddListener(text =>
-            {
-                OnClickMessage?.Invoke(text);
-            });
+            _inputFieldText.onEndEdit.AddListener(text => { OnClickMessage?.Invoke(text); });
         }
 
         public void Initialize(string nameChat)

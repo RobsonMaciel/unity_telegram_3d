@@ -78,7 +78,7 @@ namespace Telegram.Core
                 yield break;
             }
 
-            var playerDict = (IDictionary<string, object>)player.Value;
+            var playerDict = (IDictionary<string, object>) player.Value;
             var userModel = new UserModel(playerDict);
 
             cb(false, userModel);

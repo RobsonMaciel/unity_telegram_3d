@@ -6,8 +6,9 @@ namespace Telegram.Chat
 {
     public class ChatPanel : MonoBehaviour
     {
-        [Header("Components")]
-        [SerializeField] private Image _navBackground;
+        [Header("Components")] [SerializeField]
+        private Image _navBackground;
+
         [SerializeField] private Text _textNavHeader;
         [SerializeField] private Button _btnChat;
 

@@ -66,14 +66,16 @@ namespace Telegram.Controller
         {
             FirebaseCore.Init();
 
-            if (PhoneManager.Instance.User != null)
-            {
-                _chatController.EnableModule(true);
-            }
-            else
-            {
-                _introController.EnableModule(true);
-            }
+//            if (PhoneManager.Instance.User != null)
+//            {
+//                _chatController.EnableModule(true);
+//            }
+//            else
+//            {
+//                _introController.EnableModule(true);
+//            }
+            
+            _chatController.EnableModule(true);
         }
 
         private void IntroControllerOnClickStartMessaging()

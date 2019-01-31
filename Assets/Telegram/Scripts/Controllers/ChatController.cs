@@ -6,11 +6,9 @@ namespace Telegram.Chat
 {
     public class ChatController : MonoBehaviour
     {
-        [Header("Basic")]
-        [SerializeField] private GameObject _root;
+        [Header("Basic")] [SerializeField] private GameObject _root;
 
-        [Header("Panels")]
-        [SerializeField] private ContactPanel _contactPanel;
+        [Header("Panels")] [SerializeField] private ContactPanel _contactPanel;
         [SerializeField] private ChatPanel _chatPanel;
         [SerializeField] private SettingPanel _settingPanel;
         [SerializeField] private NavigationPanel _navigationPanel;
@@ -33,7 +31,7 @@ namespace Telegram.Chat
             _messagePanel.OnClickBack += MessagePanelOnClickBack;
             _messagePanel.OnClickMessage += MessagePanelOnClickMessage;
         }
-        
+
         public void Init()
         {
             _contactPanel.Init();
@@ -44,22 +42,18 @@ namespace Telegram.Chat
 
         private void SettingPanelOnOnClickPrivacy()
         {
-
         }
 
         private void SettingPanelOnOnClickStorage()
         {
-
         }
 
         private void SettingPanelOnOnClickChangePhone()
         {
-
         }
 
         private void SettingPanelOnOnClickNotifications()
         {
-
         }
 
         private void SettingPanelOnClickLogOut()
